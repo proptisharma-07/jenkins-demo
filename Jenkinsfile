@@ -8,6 +8,9 @@ pipeline {
    post{
    success {
       echo "Pipeline Pass"
+      mail to : "proptisharma648@gmail.com"
+      subject : "Success"
+      body : "Email Working"
    }
    failure {
          echo "Pipeline Fail"
