@@ -9,13 +9,13 @@ pipeline {
 post {
   success {
     echo "Pipeline Pass "
-    mail to : "proptisharma648@gmail.com",
+    mail to : "souravsingh278@gmail.com",
     subject : "SUCCESS : Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' ",
     body:" '${env.JOB_NAME}' Build Succeeded. \n Check Build URL : '${env.BUILD_URL}' "
   }
   failure {
     echo "Pipeline Pass "
-    mail to : "proptisharma648@gmail.com",
+    mail to : "souravsingh278@gmail.com",
     subject : "FAIL : Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' ",
     body:" '${env.JOB_NAME}' Build Failed. \n Check Build URL : '${env.BUILD_URL}' "
   }
